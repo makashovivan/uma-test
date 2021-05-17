@@ -1,0 +1,23 @@
+@import '~antd/dist/antd.less';
+
+@resize-limit: 700px;
+@large-resize-limit: 1440px;
+@background-color: white;
+@text-color: #171717;
+@divider-color: black;
+@sidebar-width: 243px;
+@top-indent: 31px;
+
+.main {
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  background-color: @background-color;
+  justify-content: center;
+  @media (max-width: @resize-limit) {
+    flex-direction: column;
+  }
+  @media (max-width: @large-resize-limit) {
+    justify-content: end;
+  }
+}

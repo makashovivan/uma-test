@@ -1,0 +1,68 @@
+@import '../../App.less';
+
+
+.sidebar-container {
+  text-align: center;
+  z-index: 999;
+  background-color: @background-color;
+  flex: 0 0 @sidebar-width;
+  position: sticky;
+  top: @top-indent;
+  align-self: flex-start;
+  @media (max-width: @resize-limit) {
+    align-self: auto;
+    position: static;
+    padding-top: 24px;
+  }
+}
+
+.user-photo-container {
+  text-align: center;
+}
+
+.mnem {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media (max-width: @resize-limit) {
+    flex-direction: row;
+  }
+}
+
+.links-list {
+  padding: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.link {
+  list-style: none;
+  direction:rtl;
+  margin-top: 3px;
+}
+
+.link:hover {
+  list-style: "\2192";
+  direction:rtl;
+}
+
+.link a {
+  font-size: 12px;
+  font-weight: 200;
+  color:#666666;
+}
+
+.link a:hover {
+  color: black;
+}
+
+.links-divider {
+  margin: 10px 0 !important;
+  background-color: @divider-color !important;
+}

@@ -1,0 +1,119 @@
+@import '../../App.less';
+
+@fashion-card-normal-width: 425px;
+@fashion-card-small-width: 350px;
+
+.card-border {
+  border: 1px solid #EBEBEB !important;
+}
+
+.limited-image {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.carousel-arrow {
+  border: none !important;
+  font-size: 10px !important;
+  margin: 0 3px;
+}
+
+.fashion-image-container {
+  margin: 0 auto;
+  width: 370px;
+  height: 400px;
+  @media(max-width: @resize-limit) {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.product-image-container {
+  width: 96px;
+  height: 96px;
+}
+
+.card-title {
+  padding-bottom: 22px;
+  font-size: 16px;
+  font-weight: normal;
+  color: @text-color;
+}
+
+.card-size {
+  width: @fashion-card-normal-width;
+  @media(max-width: @resize-limit) {
+    width: @fashion-card-small-width;
+  }
+}
+
+.fashion-image-title {
+  &:extend(.card-title);
+  @media(max-width: @resize-limit) {
+    display: none;
+  }
+}
+
+.card-indent {
+  padding-right: 70px;
+  @media(max-width: @resize-limit) {
+    padding-right: 0px;
+  }
+}
+
+.fashion-container {
+  text-align: left;
+  width: fit-content;
+  justify-content: end;
+  @media(max-width: @resize-limit) {
+    justify-content: center;
+  }
+}
+
+.fashions-list-container {
+  text-align: center;
+}
+
+.products-container {
+  justify-content: end;
+  @media(max-width: @resize-limit) {
+    justify-content: space-around;
+  }
+}
+
+.to-shop-button {
+  margin-top: 18px;
+  background-color: #F0F0F0 !important;
+  padding: 0 10px !important;
+  border: none !important;
+}
+
+.shop-title {
+  padding: 5px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.back-top {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 4;
+  border: 1px solid black;
+  background-color: @background-color;
+  color: @text-color;
+  text-align: center;
+  font-size: 14px;
+}
+
+.spin {
+  margin: 20px auto !important;
+}

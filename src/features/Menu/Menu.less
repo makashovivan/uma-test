@@ -1,0 +1,20 @@
+@import '../../App.less';
+
+
+.menu-container {
+  padding: @top-indent 0;
+  background-color: @background-color;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  @media (max-width: @resize-limit) {
+    display: none;
+  }
+}
+
+.menu-button {
+  z-index: 999;
+  border: 1px solid #EBEBEB !important;
+  color: #1A1919 !important;
+}
